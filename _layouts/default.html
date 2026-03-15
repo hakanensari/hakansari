@@ -4,48 +4,48 @@ layout: compress
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/inter-ui@4.1.0/inter.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@latest/new.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/styles/application.css?v={{ site.time | date: '%s' }}"
-    />
-    {%- if page.url == "/" %}
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Hakan Ensari",
-        "additionalName": "Şenol",
-        "url": "https://hakanensari.com",
-        "sameAs": [
-          "https://github.com/hakanensari",
-          "https://www.linkedin.com/in/hakanensari",
-          "https://www.instagram.com/hakanensari",
-          "https://www.facebook.com/hakanensari",
-          "https://x.com/hakanensari"
-        ]
-      }
-    </script>
-    {%- endif %}
-  </head>
-  <body>
-    <header>
-      <h1>{{ page.title }}</h1>
-      <nav>
-        <a href="https://github.com/hakanensari/hakanensari">Source</a>
-      </nav>
-    </header>
-    {{ content }}
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ page.title }}</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/inter-ui@latest/inter.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@latest/new.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/styles/application.css?v={{ site.time | date: '%s' }}"
+        />
+        {%- if page.url == "/" %}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Hakan Ensari",
+                "additionalName": "Şenol",
+                "url": "https://hakanensari.com",
+                "sameAs": [
+                    "https://github.com/hakanensari",
+                    "https://www.linkedin.com/in/hakanensari",
+                    "https://www.instagram.com/hakanensari",
+                    "https://www.facebook.com/hakanensari",
+                    "https://x.com/hakanensari"
+                ]
+            }
+        </script>
+        {%- endif %}
+    </head>
+    <body>
+        <header>
+            <h1>{{ page.title }}</h1>
+            <nav>
+                <a href="https://github.com/hakanensari/hakanensari">Source</a>
+            </nav>
+        </header>
+        {{ content }}
+    </body>
 </html>
