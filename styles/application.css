@@ -1,3 +1,7 @@
+:root {
+  --nc-font-sans: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
 .now h3 {
   border-bottom: none;
   margin-bottom: 1rem;
