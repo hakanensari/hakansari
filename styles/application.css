@@ -14,6 +14,13 @@
   margin-right: 10px;
 }
 
+#strategy:before {
+  content: "\0022";
+}
+#strategy:after {
+  content: "\0022";
+}
+
 .books img {
   border-radius: 8px;
   display: inline-block;
